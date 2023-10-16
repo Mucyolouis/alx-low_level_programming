@@ -1,23 +1,31 @@
+#include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
 /**
- * main - generates random passwords for 101-crackme
- * Return: zero
+ * print_array - prints n elements of an array of integers
+ * @a: A pointer to an int that will be updated/ changed
+ * @n: return value n
+ * Return: void which ,means our answer is correct
  */
-int main(void)
-{
-	int sum;
-	char c;
 
-	srand(time(NULL));
-	while (sum <= 2645)
+void print_array(int *a, int n)
+{
+	int i;
+
+	i = 0;
+	while (i < n)
 	{
-		c = rand() % 128;
-		sum += c;
-		putchar(c);
+		printf("%d", a[i]);
+
+		if (i < n - 1)
+		{
+			printf(", ");
+		}
+
+
+		i++;
 	}
-	putchar(2772 - sum);
-	return (0);
+
+	printf("\n");
 }
+
+
