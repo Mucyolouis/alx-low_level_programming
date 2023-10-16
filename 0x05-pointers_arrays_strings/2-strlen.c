@@ -1,21 +1,21 @@
 #include "main.h"
+
 /**
- * _puts - prints a string
- * @str: A pointer to an int that will be changed
+ * _strlen -length of a string
+ * @s: A pointer to an int that will be changed/updated
  *
- * Return: void which means our answer is correct
+ * Return: void that means our answer is correct
  */
 
-void _puts(char *str)
+int _strlen(char *s)
 {
-	char *c;
-	int m;
+	int u;
 
-	c = str;
+	u = 0;
 
-	for (m = 0; c[m]; m++)
+	while (s[u] != '\0')
 	{
-		_putchar (c[m]);
+		u++;
 	}
-	_putchar('\n');
+	return (u);
 }
