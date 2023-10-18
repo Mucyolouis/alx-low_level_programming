@@ -44,6 +44,7 @@ void printHexes(char *b, int start, int end)
 void printASCII(char *b, int start, int end)
 {
 	int ch, i = 0;
+
 	while (i < end)
 	{
 		ch = *(b + i + start);
