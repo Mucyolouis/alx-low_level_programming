@@ -11,6 +11,9 @@
 	 * Description: description for a dog
 	 */
 	struct dog
+	/**
+	 * this is the actaul structure
+	 */
 	{
 		char *name;
 		float age;
